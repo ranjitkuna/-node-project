@@ -9,6 +9,7 @@
   "author": "ranjit rautaray",
   "license": "ISC",
   "dependencies": {
-    "node-console-colors": "^1.1.4"
+    "node-console-colors": "^1.1.4",
+    "nodemon": "^2.0.20"
   }
 }
