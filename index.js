@@ -1,5 +1,10 @@
 const fs = require("fs");
+const http  = require("http");
 
-fs.writeFileSync("muna.txt","this is right")
+http.createServer((req,res)=>{
+    res.write("i am working");
+    res.end()
+}).listen(5000)
+
 
 console.log("this is working");
