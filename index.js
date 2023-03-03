@@ -1,13 +1,16 @@
 const fs = require("fs");
+const express = require("express");
+const path = require("path")
 
 
-const input = process.argv;
-if(input[2]=="add"){
-    fs.writeFileSync(input[3],input[4]);
-}
-else if(input[2]=="remove"){
-    fs.unlinkSync(input[3])
-}
-else{
-    console.log("invalid input added")
-}
+const app = express();
+console.log(__dirname)
+
+app.get("",(req,res)=>{
+    res.send({
+        name:"ranjit",
+        age:34
+    })
+})
+
+app.listen(5400)
